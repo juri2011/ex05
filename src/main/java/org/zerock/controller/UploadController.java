@@ -37,8 +37,11 @@ public class UploadController {
 			}catch (Exception e) {
 				log.error(e.getMessage());
 			}
-			
 		}
-		
+	}
+	
+	@GetMapping("uploadAjax")
+	public void uploadAjax() {
+		log.info("upload ajax");
 	}
 }
